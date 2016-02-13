@@ -1,0 +1,32 @@
+//
+//  ViewController.m
+//  helloWorld
+//
+//  Created by Vicky Chen on 2/13/16.
+//  Copyright © 2016 Hello World Application. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *testLabel;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (IBAction)testButtonTapper:(id)sender {
+    self.testLabel.text= @"Hello World!";
+}
+
+@end
